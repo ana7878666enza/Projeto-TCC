@@ -1,0 +1,240 @@
+:root {
+    --bg-sidebar: #f5f8fb;
+    --navy-blue: #002D5B;
+    --card-bg: #ffffff;
+    --border-navy: #002D5B;
+}
+
+body {
+    background-color: #f0f2f5;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Estilizada */
+.sidebar {
+    width: 280px;
+    background-color: var(--bg-sidebar);
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-btn {
+    background-color: #0056b3;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-title {
+    font-size: 1.5rem;
+    color: var(--navy-blue);
+}
+
+.title-group h1 {
+    font-size: 1.6rem;
+    color: var(--navy-blue);
+    font-weight: bold;
+}
+
+.sidebar-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-box {
+    background-color: #0056b3;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.card-header span {
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: var(--navy-blue);
+}
+
+.gauge-box {
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.gauge-text {
+    position: absolute;
+    bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--navy-blue);
+}
+
+.card-body {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.main-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--navy-blue);
+    margin-bottom: 5px;
+}
+
+.text-green { color: #28a745; }
+
+.sub-text {
+    font-size: 0.65rem;
+    border-top: 1px dashed #ccc;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+/* Área de Conteúdo */
+.content-area {
+    flex-grow: 1;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-border-container {
+    border: 3px solid var(--border-navy);
+    border-radius: 30px;
+    padding: 30px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    height: 100%;
+}
+
+.charts-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chart-item h3 {
+    color: var(--navy-blue);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.bar-chart-container { height: 250px; }
+.donut-chart-container { height: 250px; }
+
+.tables-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.table-wrapper {
+    border: 2px solid var(--border-navy);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 15px;
+    border-bottom: 2px solid var(--border-navy);
+    border-left: 2px solid var(--border-navy);
+    color: var(--navy-blue);
+    font-size: 1rem;
+}
+
+th:first-child { border-left: none; }
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-left: 2px solid var(--border-navy);
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    color: var(--navy-blue);
+    font-size: 1.1rem;
+}
+
+td:first-child { border-left: none; }
+tr:last-child td { border-bottom: none; }
+
+.arrow-up { color: #28a745; margin-left: 15px; }
+.arrow-down { color: #dc3545; margin-left: 15px; }
+
+/* Footer Customizado */
+.custom-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    background-color: var(--navy-blue);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-content .label { font-weight: bold; }
+.footer-content .divider { opacity: 0.6; font-size: 1.5rem; }
+
